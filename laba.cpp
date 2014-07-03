@@ -17,6 +17,14 @@ class triagle{
     b = b1;
     c = c1;
   }
+  friend triangle operator * (triangle &A, triangle &B) {
+    int x, y, z;
+    x = A.getA() * B.getA();
+    y = A.getB() * B.getB();
+    z = A.getC() * B.getC();
+    triangle result(x, y, z);
+    return result;
+  }
 }
 
 int main(){
