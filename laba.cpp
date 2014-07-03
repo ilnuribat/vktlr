@@ -1,3 +1,6 @@
+#include <iostream>
+#include <conio.h>
+
 class triagle{
   private: int a, b, c;
   
@@ -14,4 +17,10 @@ class triagle{
     b = b1;
     c = c1;
   }
+}
+
+int main(){
+  triangle a(3, 4, 5);//Создали экземпляр класса triangle и сразу заполнили данные 
+  //теперь a.a = 3, a.b = 4, a.c = 5
+  return 0;
 }
